@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitfat - Inicio</title>
+    <link rel="icon" href="img/hoja.ico">
+    <link rel="stylesheet" href="css/index.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="ingresa.html">INGRESA</a></li>
+                    <li><a href="beneficios.html">BENEFICIOS</a></li>
+                    <li><a href="precios.html">PRECIOS</a></li>
+                    <li><a href="comunidad.html">COMUNIDAD</a></li>
+                    <li><a href="app.html">APP</a></li>
+                </ul>
+            </div>
+            </nav>
+    </header>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        
+        /* Estilos para la sección imagen 1 */
+        .imagen1 {
+            width: 1px; /* 67% del tamaño original */
+            height: auto;
+            border-radius: 1px; /* 67% del tamaño original */
+        }
+        
+        /* Estilos para la sección logo */
+        .logo {
+            width: 30%;
+            max-width: 308.87px; /* 67% del tamaño original */
+            height: auto;
+            border-radius: 10.38969px; /* 67% del tamaño original */
+            margin-top: 6.7%; /* 67% del tamaño original */
+            position: relative; /* Agrega una posición relativa para que left funcione */
+            left: -325.4px; /* 67% del tamaño original */
+            top: 100px; /* Mueve la imagen 100px hacia abajo */
+        }
+        @media (max-width: 1000px) {
+                /* Estilos para pantallas de 800px o menos */
+                .imagen1 img {
+                    width: 420px; /* 4 veces más pequeño que el estilo original */
+                }
+        
+                .logo img {
+                    width: 400px; /* 4 veces más pequeño que el estilo original */
+                    margin-left: 160px; /* Mover 10px a la derecha */
+                    margin-top: -50px; /* Subir 10px */
+                }
+    }
+    @media (max-width: 800px) {
+                /* Estilos para pantallas de 800px o menos */
+                .imagen1 img {
+                    width: 400px; /* 4 veces más pequeño que el estilo original */
+                    margin-left: -250px; /* Mover 10px a la derecha */
+                }
+        
+                .logo img {
+                    width: 200px; /* 4 veces más pequeño que el estilo original */
+                    margin-left: 150px; /* Mover 10px a la derecha */
+                    margin-top: 300px; /* Subir 10px */
+                }
+            }  
+                </style>
+    <main>
+
+        <div class="contenedor">
+            <section class="imagen1">
+                <img src="img/imagen1.jpg" alt="Imagen 1" title="Imagen 1">
+            </section>
+
+            <section class="logo">
+                <img src="img/Logocompleto.png" alt="Fitfat" title="Fitfat">
+            </section>
+        </div>
+
+        <section class="sobre-la-nutricion">
+            <div>
+                <h2>Sobre la Nutrición</h2>
+            </div>
+            <div
+            class="la-nutri">La nutrición es el arte de alimentar vidas.</p>
+            <div>
+            <div class="img-txt">
+                <img class="imagen2" src="img/imagen2.jpg" alt="Imagen 2" title="Imagen 2">
+                <p class="segundo-parrafo">La nutrición es parte de la vida de todo ser humano, con la ingesta de alimentos sanos y necesarios el cuerpo recibe los nutrientes, vitaminas y minerales que son esenciales para mantener un correcto funcionamiento, incluyendo la prevención de enfermedades.</p>
+            </div>
+        </section>             
+
+        <section class="especialidades">
+            <div>
+                <h2>Especialidades</h2>
+                <p>Mantente en forma con una dieta sana y equilibrada.</p>
+            </div>
+            <div class="img-list">
+                <img src="img/imagen3.jpg" alt="Imagen 3" title "Imagen 3">
+                <div>
+                    <p>Nutrición Deportiva</p>
+                    <p>Reedución Alimentaria</p>
+                    <p>Pérdida de Peso</p>
+                    <p>Prevención de Enfermedades</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script>
+        // Crear el elemento footer
+        var footer = document.createElement('footer');
+        footer.style.backgroundColor = 'rgba(136, 61, 138, 255)';
+        footer.style.color = 'white';
+        footer.style.padding = '20px';
+        footer.style.textAlign = 'center';
+
+        // Agregar el texto al footer
+        var p = document.createElement('p');
+        p.textContent = '¿Te gustó? Póngase en contacto para registrarse e iniciar una consulta';
+        p.style.fontFamily = 'Abel';
+        p.style.color = '#000000';
+        p.style.fontSize = '30px';
+        p.style.marginBottom = '20px';
+        p.style.textAlign = 'center'; // Centra el texto horizontalmente
+        footer.appendChild(p);
+
+        // Agregar el texto de los servicios online
+        var p2 = document.createElement('p');
+        p2.textContent = 'Servicios online en todas nuestras redes asociadas';
+        p2.style.fontFamily = 'Abel';
+        p2.style.color = '#808080';
+        p2.style.fontSize = '20.2px';
+        p2.style.marginBottom = '20px';
+        footer.appendChild(p2);
+
+        // Crear una lista no ordenada (ul) para los iconos y textos
+        var ul = document.createElement('ul');
+        ul.style.listStyle = 'none'; // Quitar las viñetas de la lista
+        ul.style.display = 'flex'; // Aplicar flexbox
+        ul.style.flexDirection = 'column'; // Alinear los elementos en columna
+        ul.style.alignItems = 'center'; // Centrar horizontalmente
+        footer.appendChild(ul);
+
+        // Función para crear un elemento de lista con icono y texto
+        function crearListaIconoTexto(href, imgSrc, alt, texto, marginDerechoIcono, marginDerechoTexto) {
+            var li = document.createElement('li');
+        
+            var a = document.createElement('a');
+            a.href = href;
+            a.style.display = 'flex';
+            a.style.alignItems = 'center';
+            a.style.textDecoration = 'none'; // Elimina el subrayado azul de los enlaces
+            a.style.color = 'white'; // Cambia el color de los enlaces
+            a.style.marginBottom = '35px'; // Añade margen inferior para separar los enlaces
+            li.appendChild(a);
+        
+            var img = document.createElement('img');
+            img.src = imgSrc;
+            img.alt = alt;
+            img.style.marginRight = marginDerechoIcono;
+            a.appendChild(img);
+        
+            var span = document.createElement('span');
+            span.textContent = texto;
+            span.style.color = 'white';
+            span.style.marginRight = marginDerechoTexto;
+            span.style.fontFamily = 'Abel'; // Cambia el tipo de letra a Abel
+            span.style.fontSize = '22px'; // Cambia el tamaño de fuente a 25px
+            a.appendChild(span);
+        
+            return li;
+        }
+        
+        // Agregar los elementos de lista al footer
+        ul.appendChild(crearListaIconoTexto('https://www.instagram.com/fitfat', 'img/ig.jpg', 'Instagram', '@fitfat', '10px', '5px'));
+        ul.appendChild(crearListaIconoTexto('mailto:fitfat@gmail.com', 'img/email.jpg', 'Email', 'fitfat@gmail.com', '10px', '-85px'));
+        ul.appendChild(crearListaIconoTexto('tel:01292463', 'img/tel.jpg', 'Teléfono', '994355129', '10px', '-38px'));
+
+        // Agregar el footer al final del body
+        document.body.appendChild(footer);
+
+
+        
+    </script>
+</body>
+</html>
