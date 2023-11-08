@@ -35,33 +35,6 @@ nav li a {
 }
 
 
-/* Estilos para el contenedor */
-.contenedor {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* Estilos para la sección imagen 1 */
-.imagen1 {
-    width: 1px; /* 67% del tamaño original */
-    height: auto;
-    border-radius: 1px; /* 67% del tamaño original */
-}
-
-/* Estilos para la sección logo */
-.logo {
-    width: 30%;
-    max-width: 308.87px; /* 67% del tamaño original */
-    height: auto;
-    border-radius: 10.38969px; /* 67% del tamaño original */
-    margin-top: 6.7%; /* 67% del tamaño original */
-    position: relative; /* Agrega una posición relativa para que left funcione */
-    left: -325.4px; /* 67% del tamaño original */
-    top: 100px; /* Mueve la imagen 100px hacia abajo */
-}
-/* Cuando la pantalla tiene 800px o menos, cambia los estilos */
-
 /* Estilos para la sección "Sobre la Nutrición" con fondo al 60% de opacidad */
 .sobre-la-nutricion {
     display: flex;
@@ -188,6 +161,14 @@ nav li a {
     content: '• ';
 }
 
+
+
+
+
+
+
+
+
 /* Cuando la pantalla tiene 800px o menos, cambia los estilos */
 @media (max-width: 800px) {
     .especialidades {
@@ -196,5 +177,54 @@ nav li a {
     }
 }
 
+@media (max-width: 800px) {
+    .sobre-la-nutricion {
+        width: 320px;
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+    @media (max-width: 800px) {
+        .img-txt {
+            display: flex;
+            flex-direction: column; /* Cambia la dirección de flexión a columna */
+                    margin-left: 100px;
+        }
+    
+        .segundo-parrafo {
+            order: 2; /* Cambia el orden del segundo párrafo */
+            margin-left: 0px;
+        }
+    
+        .imagen2 {
+            order: 1; /* Cambia el orden de la imagen2 */
+            max-width: 100%; /* Asegura que la imagen no se estire */
+            height: auto; /* Permite que la altura se ajuste automáticamente */
+            margin-top: -40px;
+        }
+.la-nutri {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255); /* Cambia el color del texto a blanco */
+    font-size: 18px; /* 67% del tamaño original */
+    text-align: center;
+}
+    }
+    
+}
 
+
+    
+    @media (max-width: 800px) {
+    /* Estilos para el encabezado */
+    header {
+        /* Hace que el fondo del encabezado sea transparente */
+        background-color: transparent;
+    }
+
+    header ul {
+        display: block;
+        width: 100px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+}
 
