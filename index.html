@@ -69,33 +69,10 @@
         
                 .logo img {
                     width: 200px; /* 4 veces más pequeño que el estilo original */
-                    margin-left: 130px; /* Mover 10px a la derecha */
+                    margin-left: 150px; /* Mover 10px a la derecha */
                     margin-top: 300px; /* Subir 10px */
                 }
-                .sobre-la-nutricion {
-                display: block; /* Cambia la disposición de flex a block */
-                margin-top: 100px; /* Subir 10px */
-
-                /* Cambia la disposición de flex a block */
-                display: block;
-                }
-    }
-    @media (max-width: 800px) {
-    /* Estilos para el encabezado */
-    header {
-        /* Hace que el fondo del encabezado sea transparente */
-        background-color: transparent;
-    }
-
-    header ul {
-        display: block;
-        width: 100px;
-        margin-left: 100px;
-        margin-top: 100px;
-    }
-}
-
-    
+            }  
                 </style>
     <main>
 
@@ -116,9 +93,9 @@
             </div>
             <div class="img-txt">
                 <p class="segundo-parrafo">La nutrición es parte de la vida de todo ser humano, con la ingesta de alimentos sanos y necesarios el cuerpo recibe los nutrientes, vitaminas y minerales que son esenciales para mantener un correcto funcionamiento, incluyendo la prevención de enfermedades.</p>
-                <img src="img/imagen2.jpg" alt="Imagen 2" title="Imagen 2">
+                <img class="imagen2" src="img/imagen2.jpg" alt="Imagen 2" title="Imagen 2">
             </div>
-        </section>
+        </section>        
 
         <section class="especialidades">
             <div>
@@ -210,6 +187,26 @@
 
         // Agregar el footer al final del body
         document.body.appendChild(footer);
+
+
+        // Verificar el ancho de la ventana cuando se carga la página
+window.addEventListener("load", function () {
+  redirigirSegunAnchoDePantalla();
+});
+
+// Verificar el ancho de la ventana cuando se cambia su tamaño
+window.addEventListener("resize", function () {
+  redirigirSegunAnchoDePantalla();
+});
+
+// Función para redirigir según el ancho de la pantalla
+function redirigirSegunAnchoDePantalla() {
+  if (window.innerWidth >= 801) {
+    // Redirigir a otra página si el ancho de la ventana es mayor o igual a 801px
+    window.location.href = "index copy.html";
+  }
+}
+
     </script>
 </body>
 </html>
