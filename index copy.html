@@ -48,18 +48,6 @@
             left: -325.4px; /* 67% del tamaño original */
             top: 100px; /* Mueve la imagen 100px hacia abajo */
         }
-        @media (max-width: 1000px) {
-                /* Estilos para pantallas de 800px o menos */
-                .imagen1 img {
-                    width: 420px; /* 4 veces más pequeño que el estilo original */
-                }
-        
-                .logo img {
-                    width: 400px; /* 4 veces más pequeño que el estilo original */
-                    margin-left: 160px; /* Mover 10px a la derecha */
-                    margin-top: -50px; /* Subir 10px */
-                }
-    }
     @media (max-width: 800px) {
                 /* Estilos para pantallas de 800px o menos */
                 .imagen1 img {
@@ -100,40 +88,90 @@
         </section>             
 
         <section class="especialidades">
+            <h2>Especialidades</h2>
             <div>
-                <h2>Especialidades</h2>
                 <p>Mantente en forma con una dieta sana y equilibrada.</p>
             </div>
-            <div class="img-list">
-                <img src="img/imagen3.jpg" alt="Imagen 3" title "Imagen 3">
-                <div>
+            <div class="img-txt"> <!-- Agrega un div contenedor -->
+                <img class="imagen3" src="img/imagen3.jpg" alt="Imagen 3" title="Imagen 3">
+                <div class="only-4-points">
                     <p>Nutrición Deportiva</p>
                     <p>Reedución Alimentaria</p>
                     <p>Pérdida de Peso</p>
                     <p>Prevención de Enfermedades</p>
                 </div>
             </div>
-        </section>
+        </section>        
+        
     </main>
 
     <footer></footer>
     <script>
-        // Crear el elemento footer
-        var footer = document.createElement('footer');
-        footer.style.backgroundColor = 'rgba(136, 61, 138, 255)';
-        footer.style.color = 'white';
-        footer.style.padding = '20px';
-        footer.style.textAlign = 'center';
+// Crear el elemento footer
+var footer = document.createElement('footer');
+footer.style.backgroundColor = 'rgba(136, 61, 138, 255)';
+footer.style.color = 'white';
+footer.style.padding = '20px';
+footer.style.textAlign = 'center';
 
-        // Agregar el texto al footer
-        var p = document.createElement('p');
-        p.textContent = '¿Te gustó? Póngase en contacto para registrarse e iniciar una consulta';
-        p.style.fontFamily = 'Abel';
-        p.style.color = '#000000';
-        p.style.fontSize = '30px';
-        p.style.marginBottom = '20px';
-        p.style.textAlign = 'center'; // Centra el texto horizontalmente
-        footer.appendChild(p);
+// Agregar el texto al footer
+var p = document.createElement('p');
+p.textContent = '¿Te gustó? Póngase en contacto para registrarse e iniciar una consulta';
+p.style.fontFamily = 'Abel';
+p.style.color = '#000000';
+p.style.fontSize = window.innerWidth <= 800 ? '20px' : '30px'; // Cambia el tamaño de la fuente dependiendo del ancho de la ventana
+p.style.marginBottom = '20px';
+p.style.textAlign = 'center'; // Centra el texto horizontalmente
+footer.appendChild(p);
+
+// Crear una lista no ordenada (ul) para los iconos y textos
+var ul = document.createElement('ul');
+ul.style.listStyle = 'none'; // Quitar las viñetas de la lista
+ul.style.display = 'flex'; // Aplicar flexbox
+ul.style.flexDirection = 'column'; // Alinear los elementos en columna
+ul.style.alignItems = 'center'; // Centrar horizontalmente
+footer.appendChild(ul);
+
+// Función para crear un elemento de lista con icono y texto
+function crearListaIconoTexto(href, imgSrc, alt, texto, marginDerechoIcono, marginDerechoTexto) {
+    var li = document.createElement('li');
+
+    var a = document.createElement('a');
+    a.href = href;
+    a.style.display = 'flex';
+    a.style.alignItems = 'center';
+    a.style.textDecoration = 'none'; // Elimina el subrayado azul de los enlaces
+    a.style.color = 'white'; // Cambia el color de los enlaces
+    a.style.marginBottom = '35px'; // Añade margen inferior para separar los enlaces
+    li.appendChild(a);
+
+    var img = document.createElement('img');
+    img.src = imgSrc;
+    img.alt = alt;
+    img.style.marginRight = marginDerechoIcono;
+    img.style.width = window.innerWidth <= 800 ? '20px' : '30px'; // Cambia el tamaño de la imagen dependiendo del ancho de la ventana
+    a.appendChild(img);
+
+    var span = document.createElement('span');
+    span.textContent = texto;
+    span.style.color = 'white';
+    span.style.marginRight = marginDerechoTexto;
+    span.style.fontFamily = 'Abel'; // Cambia el tipo de letra a Abel
+    span.style.fontSize = window.innerWidth <= 800 ? '15px' : '22px'; // Cambia el tamaño de fuente a 25px
+    a.appendChild(span);
+
+    return li;
+}
+
+// Escuchar el evento resize del objeto window
+window.addEventListener('resize', function() {
+    // Actualizar el tamaño de la fuente y de la imagen cuando el tamaño de la ventana cambia
+    p.style.fontSize = window.innerWidth <= 800 ? '20px' : '30px';
+    img.style.width = window.innerWidth <= 800 ? '20px' : '30px';
+    span.style.fontSize = window.innerWidth <= 800 ? '15px' : '22px';
+});
+
+
 
         // Agregar el texto de los servicios online
         var p2 = document.createElement('p');
