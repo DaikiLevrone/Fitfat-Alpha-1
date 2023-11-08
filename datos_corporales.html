@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="img/hoja.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fitfat</title>
+</head>
+<body>
+    <header></header>
+
+    <section class="dat_corp">
+
+        <h9>Recibir una Dieta Básica Personalizada según tus Datos Corporales</h9>
+        
+        <!-- Formulario para registrar datos corporales -->
+        <form id="bodyDataForm">
+            <label for="age">Edad:</label>
+            <input type="number" id="age" required>
+    
+            <label for="weight">Peso (en kg):</label>
+            <input type="number" id="weight" required>
+    
+            <label for "height">Altura (en cm):</label>
+            <input type="number" id="height" required>
+    
+            <button type="submit">Calcular Dieta</button>
+        </form>
+    
+        <!-- Resultados de la dieta personalizada -->
+        <div id="dietResults"></div>
+    
+    </section>
+
+
+    <script>
+        const bodyDataForm = document.getElementById("bodyDataForm");
+        const ageInput = document.getElementById("age");
+        const weightInput = document.getElementById("weight");
+        const heightInput = document.getElementById("height");
+        const dietResults = document.getElementById("dietResults");
+
+        bodyDataForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const age = parseInt(ageInput.value);
+            const weight = parseFloat(weightInput.value);
+            const height = parseInt(heightInput.value);
+
+            // Calcular la dieta promedio de 2000 calorías (esto es solo un ejemplo, deberías calcularlo según las necesidades reales)
+            const dietCalories = 2000;
+
+            // Generar resultados
+            const results = `
+                <h2>Recomendación de Dieta</h2>
+                <p>Edad: ${age} años</p>
+                <p>Peso: ${weight} kg</p>
+                <p>Altura: ${height} cm</p>
+                <p>Dieta Recomendada: ${dietCalories} calorías por día</p>
+                <a href="planalimenticio.html"><button>!Ver Plan Alimenticio!</button></a>
+            `;
+
+            // Mostrar resultados
+            dietResults.innerHTML = results;
+        });
+
+    </script>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

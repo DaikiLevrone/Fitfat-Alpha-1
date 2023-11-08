@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="img/hoja.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fitfat</title>
+</head>
+<body>
+    <header></header>    
+    <section class="registro">
+        <div>
+            <h3>Pertenece a la Familia Fitfat</h3>    
+            <h2>Datos de registro</h2>
+        </div>
+        <div class="registroImg">
+            <a><img src="img/Registro.png" alt="" width="200"></a>
+        </div>    
+        <form action="registrar_usuario.php" method="post" class="formulario-registro">
+            <h4>Nombre Completos</h4>
+            <input type="text" name="nombre" required="">
+            <h4>Apellidos Completos</h4>
+            <input type="text" name="apellidos" required="">
+            <h4>Nombre de usuario</h4>
+            <input type="text" name="usuario" required="">
+            <h4>Email</h4>
+            <input type="email" name="correo" required="">
+            <h4>Contraseña</h4>
+            <input type="password" name="contrasena" required="">
+            <h4>Repita Contraseña</h4>
+            <input type="password" name="contrasena2" required="">
+            <h4>Celular</h4>
+            <input type="number" name="celular" required="">
+            <h4>Dirección*</h4>
+            <input type="Text" name="direccion" required=""><br><br>
+            <div>
+                <input type="submit" class="btnBanner" value="Registrase">
+            </div>
+        </form>
+        <br><br>
+        <b>
+            <p>La contraseña que ingresaste es incorrecta.</p>
+        </b>
+        <p>
+            <a href="recuperar_contrasena.html">¿Olvidaste tu contraseña?</a>
+        </p>
+    </section>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

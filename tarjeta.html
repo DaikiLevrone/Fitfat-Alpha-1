@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="img/hoja.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fitfat</title>
+</head>
+<body>
+    <header></header>    
+    <section class="containerBank">
+        <form action="planentrenamiento.html" method="post" class="formulario-pago"> <!-- Ajusta el atributo "action" para dirigir los datos al servidor -->
+
+            <label for="nombre_titular">Nombre del Titular de la Tarjeta:</label>
+            <input type="text" id="nombre_titular" name="nombre_titular" required>
+    
+            <label for="numero_tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="numero_tarjeta" name="numero_tarjeta" required>
+    
+            <label for="fecha_vencimiento">Fecha de Vencimiento:</label>
+            <input type="text" id="fecha_vencimiento" name="fecha_vencimiento" placeholder="MM/YY" required>
+    
+            <label for="codigo_seguridad">Código de Seguridad (CVV):</label>
+            <input type="text" id="codigo_seguridad" name="codigo_seguridad" required>
+    
+            <a href="planentrenamiento.html"><button>Realizar el pago!</button></a>
+        </form>
+    </section>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

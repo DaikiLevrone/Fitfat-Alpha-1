@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="img/hoja.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fitfat</title>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <section class="containerN_about">
+            <div class="N_about-content">
+                
+				<div class="boxN-img">
+                    <img src="img/foto1.png" alt="">
+                </div>
+
+                <div class="boxN-txt">
+                    <p>Acerca de nosotros!!!</p>
+	                <h2>Buscamos impulsar tu vida saludable</h2>
+	                <p>Nos preocupamos en la manera de poder motivar tu vida diaria, de manera saludable e interactiva con otros usuarios que ayudara a un progreso en comunidad</p>
+                    <img src="img/comida.png" width="120" />
+	                <h3>Solo comida sana</h3>
+	                <p>Monitoreo de una calorias balanceadas</p>
+                	<img src="img/ejercicio.png" width="120" />
+                    <h3>Ejercicios</h3>
+                	<p>Recados de ejercicios semanales</p>
+                    <br>
+                	<div>					
+						<a href="precios.html" class= "btnBanner">SHOP NOW</a>
+					</div>      
+                </div>
+            </div>
+        </section>
+		</section>
+		<div class="testi">
+		<h3>Testimonio</h3><br>
+		<h3>¿Qué opinan nuestros usuarios?</h3><br>
+		<div class="testi"></div>
+		</section>
+    </main>
+	<div class="carousel">
+		<button class="arrow left">←</button>
+		<div class="testimonial active">
+			<img src="img//fab.jpg" alt="De adicto a la comida basura a consumidor consciente.">
+			<div class="testimonial-content">
+				<h2>De adicto a la comida basura a la consumidor consciente.</h2>
+				<h4>"Esta aplicación de fitness cambió mi vida. He perdido 25 kg, y siempre es lo que más quise en el mundo. Desde que obtuve mi cambio, gané respeto, confianza, autoestima y superioridad. El mundo del fitness es lo mejor que pude conocer."</h4>
+				<h6>- Fabricio Prado</h6>
+			</div>
+		</div>
+		<div class="testimonial">
+			<img src="img//testi2.jpg" alt="Estaba deseando hacer un buen camino saludable.">
+			<div class="testimonial-content">
+				<h2>Estaba deseando hacer un buen camino saludable.</h2>
+				<h4>""¡Increíble! Con esta aplicación, he logrado mis objetivos de fitness más rápido de lo que esperaba. Los resultados que he obtenido son asombrosos, y ahora me siento más saludable, en forma y llena de energía. </h4>
+				<h6>- Eva</h6>
+			</div>
+		</div>
+		<div class="testimonial">
+			<img src="img//testi3.jpg" alt="Todo lo que aprendió le ayudó a perder 13 kilos.">
+			<div class="testimonial-content">
+				<h2>Todo lo que aprendió le ayudó a perder 13 kilos.</h2>
+				<h4>"Recomiendo esta aplicación a cualquiera que quiera llevar su entrenamiento al siguiente nivel. Con su ayuda, he logrado alcanzar un nivel de acondicionamiento físico que nunca creí posible. Esta aplicación ha sido una pieza clave en mi viaje hacia una vida más saludable y activa."<h4>
+				<h6>- Brisseth</h6>
+			</div>
+		</div>
+		<button class="arrow right">→</button>
+	</div>
+	
+	<section>
+		<div class="nostrosboton">
+		<a href="precios.html" class="comu-button">INICIA HOY TU VIAJE</a>
+		</div>
+	</section>
+
+	
+	<script>
+		/*TESTIMONIOS */
+		var testimonials = document.querySelectorAll('.testimonial');
+		var currentIndex = 0;
+		
+		function showTestimonial(index) {
+			for (var i = 0; i < testimonials.length; i++) {
+				testimonials[i].classList.remove('active');
+			}
+			testimonials[index].classList.add('active');
+		}
+		
+		document.querySelector('.arrow.left').addEventListener('click', function() {
+			currentIndex = (currentIndex > 0) ? currentIndex - 1 : testimonials.length - 1;
+			showTestimonial(currentIndex);
+		});
+		
+		document.querySelector('.arrow.right').addEventListener('click', function() {
+			currentIndex = (currentIndex < testimonials.length - 1) ? currentIndex + 1 : 0;
+			showTestimonial(currentIndex);
+		});
+		
+		showTestimonial(currentIndex); /* Muestra el primer testimonio al cargar la página */
+		
+		/* Añade un intervalo para cambiar el testimonio automáticamente cada 10 segundos */
+		setInterval(function() {
+			currentIndex = (currentIndex < testimonials.length - 1) ? currentIndex + 1 : 0;
+			showTestimonial(currentIndex);
+		}, 10000); /* 10000 milisegundos son 10 segundos */
+		</script>
+			
+	<footer>    
+    </footer>
+	<script src="js//script.js"></script>
+</body>
+</html>

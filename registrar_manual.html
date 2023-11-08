@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="img/hoja.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fitfat</title>
+</head>
+<body>
+    <header></header>
+    <h1>Registro de Alimentos Manualmente</h1>
+
+    <!-- Formulario para registrar alimentos -->
+    <form id="foodForm">
+        <label for="foodName">Nombre del Alimento:</label>
+        <input type="text" id="foodName" required>
+
+        <label for "calories">Valor Calórico (en calorías):</label>
+        <input type="number" id="calories" required>
+
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" required>
+
+        <label for="unit">Unidad:</label>
+        <select id="unit">
+            <option value="g">gramos</option>
+            <option value="kg">kilogramos</option>
+            <option value="oz">onzas</option>
+        </select>
+
+        <label for="carbs">Carbohidratos (g):</label>
+        <input type="number" id="carbs">
+
+        <label for="fats">Grasas (g):</label>
+        <input type="number" id="fats">
+
+        <label for="protein">Proteína (g):</label>
+        <input type="number" id="protein">
+
+        <button type="button" id="registerFood">Registrar Alimento</button>
+    </form>
+
+    <!-- Lista de alimentos registrados con sus valores nutricionales -->
+    <h2>Lista de Alimentos Registrados</h2>
+    <ul id="foodList"></ul>
+
+    <script>
+        // JavaScript para manejar el formulario y mostrar alimentos registrados
+        const foodForm = document.getElementById("foodForm");
+        const foodNameInput = document.getElementById("foodName");
+        const caloriesInput = document.getElementById("calories");
+        const quantityInput = document.getElementById("quantity");
+        const unitInput = document.getElementById("unit");
+        const carbsInput = document.getElementById("carbs");
+        const fatsInput = document.getElementById("fats");
+        const proteinInput = document.getElementById("protein");
+        const foodList = document.getElementById("foodList");
+
+        document.getElementById("registerFood").addEventListener("click", function () {
+            const foodName = foodNameInput.value;
+            const calories = caloriesInput.value;
+            const quantity = quantityInput.value;
+            const unit = unitInput.value;
+            const carbs = carbsInput.value;
+            const fats = fatsInput.value;
+            const protein = proteinInput.value;
+
+            // Agregar el alimento a la lista
+            const foodItem = document.createElement("li");
+            foodItem.textContent = `${foodName}: ${calories} calorías, ${quantity} ${unit}, Carbohidratos: ${carbs}g, Grasas: ${fats}g, Proteína: ${protein}g`;
+            foodList.appendChild(foodItem);
+
+            // Limpiar el formulario
+            foodNameInput.value = "";
+            caloriesInput.value = "";
+            quantityInput.value = "";
+            unitInput.value = "g";
+            carbsInput.value = "";
+            fatsInput.value = "";
+            proteinInput.value = "";
+        });
+    </script>
+    
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

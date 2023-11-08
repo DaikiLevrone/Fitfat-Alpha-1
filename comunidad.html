@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="img/hoja.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fitfat</title>
+</head>
+<body>
+    <header></header>
+    <section class="comunity">
+        <div class="comu_container" id="introduccion">
+            <h3>¡Únete a nuestra comunidad fitness!</h3>
+            <p>En nuestra comunidad, te ofrecemos la oportunidad de alcanzar tus objetivos de fitness y bienestar. Ofrecemos entrenamientos, consejos de nutrición y un apoyo constante de nuestros miembros.</p>
+        </div>
+    
+        <div class="comu_container" id="entrenamientos">
+            <h3>Entrenamientos</h3>
+            <p>Descubre una variedad de rutinas de entrenamiento, desde cardio hasta levantamiento de pesas. Nuestros entrenadores expertos te guiarán para lograr tus metas.</p>
+        </div>
+    
+        <div class="comu_container" id="nutricion">
+            <h3>Nutrición</h3>
+            <p>Una alimentación adecuada es esencial para tu éxito en el fitness. Obtén consejos sobre cómo mantener una dieta balanceada y saludable.</p>
+        </div>
+    
+        <div class="comu_container" id="miembros">
+            <h3>Nuestra Comunidad</h3>
+            <p>Conoce a algunos de nuestros miembros y descubre cómo han transformado sus vidas a través del fitness y el bienestar.</p>
+        </div>
+    
+        <div class="comu_container" id="contacto">
+            <h3>Contacto</h3>
+            <p>¿Tienes alguna pregunta o comentario? ¡Contáctanos y estaremos encantados de ayudarte!</p>
+            <a href="mailto:info@comunidadfitness.com" class="comu-button">Envíanos un correo</a>
+        </div>
+    
+        <div class="comu_container" id="publicaciones">
+            <h3>Publicaciones</h3>
+        
+            <!-- Formulario para crear una nueva publicación -->
+            <form id="publicacion-form">
+                <textarea id="publicacion-text" placeholder="Escribe tu publicación..."></textarea>
+                <button type="submit" class="comu-button">Publicar</button>
+            </form>
+        
+            <!-- Área para mostrar las publicaciones -->
+            <div id="publicacion-list">
+                <!-- Aquí se mostrarán las publicaciones -->
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        /*COMUNIDAD JAVA*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const publicacionForm = document.getElementById("publicacion-form");
+    const publicacionText = document.getElementById("publicacion-text");
+    const publicacionList = document.getElementById("publicacion-list");
+
+    publicacionForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const texto = publicacionText.value;
+        if (texto.trim() !== "") {
+            crearPublicacion(texto);
+            publicacionText.value = "";
+        }
+    });
+
+    function crearPublicacion(texto) {
+        const publicacion = document.createElement("div");
+        publicacion.classList.add("publicacion");
+        publicacion.innerHTML = `<p>${texto}</p>
+        <form class="respuesta-form">
+            <input type="text" class="respuesta-input" placeholder="Responder...">
+            <button type="submit" class="button">Responder</button>
+        </form>
+        <div class="respuestas"></div>`;
+
+        publicacionList.appendChild(publicacion);
+
+        const respuestaForm = publicacion.querySelector(".respuesta-form");
+        respuestaForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const respuestaInput = respuestaForm.querySelector(".respuesta-input");
+            const respuestaTexto = respuestaInput.value;
+            if (respuestaTexto.trim() !== "") {
+                crearRespuesta(publicacion, respuestaTexto);
+                respuestaInput.value = "";
+            }
+        });
+    }
+
+    function crearRespuesta(publicacion, texto) {
+        const respuestasContainer = publicacion.querySelector(".respuestas");
+        const respuesta = document.createElement("div");
+        respuesta.classList.add("respuesta");
+        respuesta.innerHTML = `<p>${texto}</p>`;
+        respuestasContainer.appendChild(respuesta);
+    }
+});
+
+    </script>
+        
+    <footer></footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
