@@ -100,7 +100,14 @@ nav li a {
     top: -13.4px; /* 67% del tamaño original */
     left: -13.4px; /* 67% del tamaño original */
 }
-
+.la-nutri {
+    color: rgb(255, 255, 255); /* Cambia el color del texto a blanco */
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.884px; /* 67% del tamaño original */
+    text-align: center;
+}
 
 /* Cuando la pantalla tiene 800px o menos, cambia los estilos */
 @media (max-width: 800px) {
@@ -161,6 +168,14 @@ nav li a {
     content: '• ';
 }
 
+.especialidades h2 {
+    font-family: 'Abel'; /* Utiliza la misma fuente que en "Especialidades" */
+    font-weight: 400;
+    font-size: 26.8px; /* 67% del tamaño original */
+    line-height: 130%; /* Nuevo espaciado de línea */
+    text-align: center;
+    color: #000000; /* Nuevo color de texto */
+}
 
 
 
@@ -200,17 +215,11 @@ nav li a {
             max-width: 100%; /* Asegura que la imagen no se estire */
             height: auto; /* Permite que la altura se ajuste automáticamente */
             margin-top: -40px;
+            margin-left: -10px;
         }
-.la-nutri {
-    font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255); /* Cambia el color del texto a blanco */
-    font-size: 18px; /* 67% del tamaño original */
-    text-align: center;
-}
     }
     
 }
-
 
     
     @media (max-width: 800px) {
@@ -227,4 +236,29 @@ nav li a {
         margin-top: 100px;
     }
 }
+@media (max-width: 800px) {
+    .imagen3 {
+        height: auto;
+        width: 100%;
+        max-height: 400px;
+        margin-left: -140px;
+    }
 
+.only-4-points {
+    margin-top: 20px
+}
+.only-4-points p {
+    margin: 0; /* Elimina el margen vertical que podría causar el espacio entre líneas */
+    white-space: nowrap; /* Evita el salto de línea entre los elementos de la lista */
+}
+}
+
+@media (max-width: 800px) {
+    footer p {
+        font-size: 16px; /* Tamaño de fuente para el primer párrafo */
+    }
+
+    footer ul li span {
+        font-size: 16px; /* Tamaño de fuente para los textos en la lista de iconos */
+    }
+}
