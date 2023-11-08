@@ -1,0 +1,1839 @@
+/* Estilos para el encabezado */
+header {
+    position: absolute;
+    top: 0;
+    right: 53.6px; /* 67% del tamaño original */
+    padding: 6.7px; /* 67% del tamaño original */
+    background-color: #FFFFFF;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el elemento "INICIO" en el menú de navegación */
+nav li:first-child a {
+    color: #BA47EB;
+}
+/* Estilos para el contenido principal */
+main {
+    margin-top: 46.9px; /* 67% del tamaño original */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 9.38px 10.72px; /* 67% del tamaño original */
+    text-decoration: none;
+}
+
+/* Estilos para las secciones principales */
+main section {
+    margin: 1.34em; /* 67% del tamaño original */
+}
+
+
+/*====== INDEX =======*/
+
+section.container_inicio{    
+    
+    display: flex;        
+    justify-content: center;
+}
+
+.cIni_txt{
+    display: flex;
+    background-image: url(https://www.clarin.com/img/2016/08/26/rJrso1aFNe_1256x620.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el cuadro de texto */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */    
+    width: 80%;
+    padding: 4rem;
+    max-height: 100%;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center; /* Para centrar verticalmente el texto */    
+}
+
+.cIni_txt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%; /* Cubre la mitad derecha del contenedor */
+    background: linear-gradient(to right, transparent, rgba(86 55 99 / 80%)); /* Aplicamos el fondo difuminado */
+    
+}
+
+.container_masinfo_title{
+    
+    font-style: italic;
+    margin-right: 40px;
+    font-size: 60px;
+    max-width: 100%; 
+    
+}
+
+.container_masinfo_btn{
+    background: #6b469e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+section.ini_mid_btns{
+    
+    display: flex;        
+    justify-content: center;
+}
+
+.ini_btns{
+    background-color: rgb(142, 142, 192);
+    box-shadow: 0px 0px 55px 5px rgba(160, 112, 112, 0.5);    
+    
+    display: flex; 
+    width: 80%;
+    padding: 1rem;
+    max-height: 100%;     
+    align-items: center; /* Para centrar verticalmente el texto */    
+    justify-content: center;
+    margin:2rem;
+}
+
+/*================ BENEFICIOS =======================*/
+/*===GUIA NUTRICIONAL===*/
+
+section.containerB_nutri{    
+    justify-content: center;     
+    padding: 1rem 0;    
+    display: flex;
+}
+
+.B_nutri-content{
+    width: 80%;    
+    display: flex; /* Usar display: flex para alinear elementos en línea */
+    flex-wrap: wrap; /* Permite que los elementos se coloquen en una nueva línea cuando no haya suficiente espacio horizontal */
+    background: linear-gradient(to left, rgb(204, 193, 175),rgb(204, 195, 209));    
+      
+}
+
+.B_nutri-txt {
+    flex: auto;  /* Ancho automático */
+
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+    padding: 2rem  ;        
+    margin: 2rem;
+    background: linear-gradient(to left, rgb(211, 176, 115), rgb(185, 184, 167));
+    border-radius: 25px;
+
+    overflow: auto; /* Permite desplazamiento vertical si el contenido excede la altura */
+}  
+   
+
+.B_nutri-content h2 {
+    color: black; 
+}
+
+.B_nutri-content h3 {
+    color: #4b3763;
+    font-size: 20px;
+    margin-top: 10px;
+}
+    
+.B_nutri-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+  
+.B_nutri-content li {
+    color: #333;
+    list-style: none;
+}
+    
+.B_nutri-content p {
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+}
+
+.B_nutri-img{    
+    max-height: 400px; /* Establece una altura máxima para limitar el crecimiento del contenido */   
+    flex: 3;
+    
+    
+    display: flex;
+
+    justify-content: center;
+    width: auto;   
+           
+    margin: 2rem;
+    padding: 2rem ;        
+    border-radius: 20%;   
+ 
+}
+
+.B_nutri-img img{    
+    border-radius: 15%;   
+    width: 90%;     
+}
+
+/*===CONTADOR CARBOHIDRATOS===*/
+section.containerB_carbo{
+    justify-content: center;     
+    padding: 1rem 0;
+    display: flex;
+}
+
+.B_carbo-content{
+    width: 80%;    
+    display: flex; /* Usar display: flex para alinear elementos en línea */
+    flex-wrap: wrap; /* Permite que los elementos se coloquen en una nueva línea cuando no haya suficiente espacio horizontal */
+    background: linear-gradient(to left, rgb(204, 193, 175),rgb(204, 195, 209));    
+    
+}
+
+.B_carbo-img{   
+    max-height: 400px;
+    flex:3;
+    
+    display: flex;    
+    
+    width: auto;
+    justify-content: center;
+
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.B_carbo-img img{    
+    border-radius: 15%;   
+    width: 90%;
+
+}
+
+.B_carbo-txt{
+    flex:auto;
+
+    background: linear-gradient(to left, rgb(165, 201, 175),rgb(189, 216, 216));
+    padding: 2rem;
+    margin: 2rem;     
+    border-radius: 25px;        
+
+    color: #666;
+    font-size: 18px;
+    text-align: center;    
+    
+    overflow: auto;
+}  
+
+.B_carbo-content h2 {    
+    color: black;  
+}
+    
+.B_carbo-content h3 {
+    color: #4b3763;
+    font-size: 20px;
+    margin-top: 10px;
+}
+    
+.B_carbo-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+  
+.B_carbo-content li {
+    color: #333;
+}
+    
+.B_carbo-content p {
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+}
+
+/*================ NOSOTROS =======================*/
+
+section.containerN_about{
+    background: linear-gradient(to left, rgb(214, 164, 188),rgb(234 243 240));
+    padding: 3rem 0;
+
+}
+
+.N_about-content{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));      
+}
+
+.boxN-img{
+    background: linear-gradient(to left, rgb(57, 70, 185),rgb(234 243 240));
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.boxN-img img{
+    width: 50%;
+}
+
+/* Centrar el contenido en el centro de la página */
+.center-content {
+    text-align: center;
+}
+
+
+.boxN-txt{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgba(160, 112, 112, 0.5);    
+}
+
+.btnBanner{
+    background: #D052D2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+ /* Carrusel de testimonios daiki */
+ .carousel {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Color de fondo morado */
+    color: #ffffff; /* Color de texto blanco */
+    width: 56%; /* Asegura que la imagen ocupe la mitad del espacio */
+    margin-left: 470px;
+}
+
+.testimonial {
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.testimonial.active {
+    display: flex; /* Asegura que la imagen y el texto estén uno al lado del otro */
+}
+
+.testimonial img {
+    width: 40%; /* Asegura que la imagen ocupe la mitad del espacio */
+}
+
+.testimonial p {
+    margin-top: 0; /* Elimina el margen superior del párrafo */
+}
+
+.testimonial p:first-child {
+    font-size: 1.5em; /* Hace que la descripción de la imagen sea más grande */
+    font-weight: bold; /* Hace que la descripción de la imagen sea negrita */
+}
+
+.arrow {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #d8b2d8; /* Color de fondo morado claro */
+    color: #ffffff; /* Color de texto blanco */
+    border: none; /* Elimina el borde del botón */
+}
+.testimonial h2, .testimonial h4 {
+    font-size: 2em;
+    margin: 0;
+    color: #33193e;
+    text-align: center;
+}
+    .testimonial h4 {
+      font-size: 1em;
+      margin: 40px 0;
+      color: #000000;
+      text-align: center;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      text-transform: none;
+      max-width: 60%;
+      font-weight: 300;
+      display: block;
+      margin-left: 80px;
+    }
+  
+.testimonial h6 {
+    font-size: 1em;
+    margin: 40px 0; /* Agrega un margen de 20px arriba y 0 abajo en el elemento h4 */
+    color: #000000;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    max-width: 60%;
+    font-weight: 300;
+    display: block;
+    margin-left: 270px;
+}
+
+@media (max-width: 1400px) {
+    .carousel {
+        width: 100%;
+        margin-left: 0;
+    }
+    .testimonial img {
+        width: 40%;
+    }
+    .testimonial h4 {
+        max-width: 60%;
+        margin-left: 0;
+        margin-left: 90px;
+    }
+    .testimonial h6 {
+        max-width: 60%;
+        margin-left: 0;
+        margin-left: 320px;
+    }
+    .carousel h3 {
+        max-width: 60%;
+        margin-left: 0;
+    }
+}
+.testi h3 {
+    font-size: 2em; /* Aumenta el tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    color: #000000; /* Cambia el color del texto a negro */
+    margin-top: 20px; /* Agrega un margen superior */
+}
+.nostrosboton {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+.nostrosboton .comu-button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s; /* Añade transiciones a todas las propiedades */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Añade una sombra al botón */
+    letter-spacing: 2px; /* Aumenta el espacio entre las letras */
+}
+
+.nostrosboton .comu-button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del botón cuando pasas el ratón por encima */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Aumenta la sombra cuando pasas el ratón por encima */
+}
+
+
+
+
+/*================ INGRESA =======================*/
+/* Estilos específicos para la página "Ingresa" */
+
+
+/* Estilos para section.banner */
+section.banner {
+    background: linear-gradient(to left,rgb(255 255 255), rgb(234 243 240));
+    padding: 4rem 0;
+    /* Agrega los estilos específicos para section.banner si es necesario */
+}
+section.banner{
+    background: linear-gradient(to left,rgb(255 255 255), rgb(234 243 240) );
+    padding: 4rem 0;
+}
+
+.containerR{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.cR-imgBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px; /* Ejemplo de un estilo, ajusta según tus preferencias */
+
+}
+.cR-imgBanner a img{
+    width: 100%;
+}
+
+.cR-content{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgRegister{
+    width: 70%;
+    align-items: right;
+}
+
+.cR-content h5{
+    font-size: 2rem;
+    color: #33193e;
+    text-align: center;
+    margin-left: 100px; /* Ejemplo de un estilo, ajusta según tus preferencias */
+}
+/* Estilos para el formulario */
+.cR-content form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: left; /* Alinea el contenido del formulario a la izquierda */
+    margin-left: -1px; /* Ejemplo de un estilo, ajusta según tus preferencias */
+}
+
+.cR-content form h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+    text-align: left; /* Alinea el texto de los encabezados a la izquierda */
+}
+
+/* Ajusta la altura de línea de los campos de correo y contraseña para hacerlos más largos */
+.cR-content form input[type="email"],
+.cR-content form input[type="password"] {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Estilo para el botón de inicio de sesión */
+.cR-content form input[type="submit"] {
+    background-color: #D052D2;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center; /* Alinea el texto del botón al centro */
+}
+
+.cR-content form div {
+    margin-top: 1rem;
+}
+/* Estilos para el contenedor principal */
+.containerR {
+    width: 100%; /* Cambia el ancho al 100% para que ocupe todo el ancho disponible */
+    margin: 0; /* Elimina el margen para que el formulario se pegue al borde izquierdo */
+    display: flex; /* Utiliza flexbox para centrar el contenido verticalmente */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+}
+
+/* Estilos para el formulario */
+.cR-content form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+.cR-content form h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+/* Ajusta la altura de línea de los campos de correo y contraseña para hacerlos más largos */
+.cR-content form input[type="email"],
+.cR-content form input[type="password"] {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Estilo para el botón de inicio de sesión */
+.cR-content form input[type="submit"] {
+    background-color: #D052D2;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.cR-content form div {
+    margin-top: 1rem;
+}
+/*================ CONTRA INCORRECTA =======================*/
+body.incorrect-password-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+body.incorrect-password-page footer {
+    align-self: flex-start;
+    width: 100%; /* Asegura que el footer tenga el ancho completo */
+}
+
+body.incorrect-password-page .cR-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px; /* Establece un ancho fijo para el contenedor */
+    margin-top: -40px; /* Ajusta este valor según tus necesidades */
+}
+
+
+/*================ RECUPERAR CONTRASEÑA =======================*/
+body.incorrect-password-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.incorrect-password-page footer {
+    align-self: flex-start;
+    width: 100%; /* Asegura que el footer tenga el ancho completo */
+}
+
+body.incorrect-password-page .cR-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*================ REGISTRO =======================*/
+
+section.registro {
+    background: linear-gradient(to left,rgb(255 255 255), rgb(234 243 240) );
+    padding: 3rem 0;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+/*================ PRECIOS =======================*/
+/* Estilos para el contenedor principal */
+.planes-section {
+    background: #fff; /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+    margin: 40px auto; /* Margen superior e inferior ajustado para centrar el contenido */
+    text-align: center; /* Alineación de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.planes-section h4 {
+    color: #333; /* Color de texto del título */
+    font-size: 24px; /* Tamaño del título */
+    margin-top: 0; /* Eliminar margen superior */
+}
+
+.planes-section img {
+    max-width: 20%; /* Imágenes ajustadas al ancho del contenedor */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+.planes-section p {
+    color: #666; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Margen superior */
+}
+
+.planes-section button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+.planes-section button:hover {
+    background-color: #ff3300; /* Cambio de color al pasar el ratón */
+}
+
+
+/*================ PLANES CONTENIDO =======================*/
+
+body {
+    margin-top: 40px !important; /* Ajusta este valor según cuánto quieras desplazar el contenido hacia abajo */
+}
+.contenido-plan{
+    display: block;
+    font-size: 16px; /* Tamaño del texto */
+    margin: 80px;
+}
+
+.contenido-plan h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.contenido-plan p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.contenido-plan ul{
+    display: block;    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.contenido-plan ul li{
+    display: list-item;
+    list-style-type: initial;
+      
+}
+
+/*================ PLANES CONTENIDO =======================*/
+
+section.plan_premiun{
+    display: flex;        
+
+    background: linear-gradient(to left,rgb(171, 167, 206), rgb(234 243 240) );
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container_pPremiun{
+    display: flex;    
+    flex-direction: column;
+    font-size: 16px; /* Tamaño del texto */
+    margin: 8px;
+
+
+    background: linear-gradient(to left,rgb(161, 193, 206), rgb(234 243 240) );
+    padding: 3rem 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+
+.container_pPremiun a{    
+    text-decoration: none;
+    margin: 10px;
+}
+
+.container_pPremiun img{
+    display: block;
+    margin:0;
+}
+
+/*================ DATOS BANCARIOS =======================*/
+
+.containerBank {
+    width: 100%;
+    text-align: center; 
+}
+
+.containerBank .formulario-pago {
+    max-width: 400px;
+    margin: 2rem auto; /* Cambia el valor de la izquierda y derecha a "auto" */
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerBank .formulario-pago label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.containerBank .formulario-pago input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.containerBank .formulario-pago button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.containerBank .formulario-pago button:hover {
+    background: #555;
+}
+
+
+/*================ PLANBASICO_CONTENIDO=======================*/
+
+/* Estilos del contenido del plan */
+.contenido-plan {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Reduzco el margen inferior para evitar la superposición con el footer */
+    position: relative; /* Agrego posicionamiento relativo para z-index */
+    z-index: 1; /* Establezco un z-index para asegurarme de que el contenido esté por encima del footer */
+}
+
+.contenido-plan h2 {
+    color: #333;
+}
+
+.contenido-plan p {
+    color: #555;
+}
+
+.contenido-plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contenido-plan ul li {
+    margin: 10px 0;
+    color: #333;
+}
+
+.contenido-plan a button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.contenido-plan a button:hover {
+    background-color: #555;
+}
+
+
+/*=============== METODOS DE PAGO=======================*/
+
+/* Estilos generales */
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor del formulario */
+.containerBank {
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para el formulario de checkout */
+.checkout {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.checkout input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkout button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.checkout button:hover {
+    background: #555;
+}
+
+/* Estilos para el formulario de pago */
+.checkout button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el formulario de envío */
+.checkout select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+/*================ PLAN ALIMENTICIO =======================*/
+section.planAlimenticio{
+    background-color: rgb(216, 238, 236);
+    text-align: center;
+    padding: 2rem;
+}
+
+.containerday-PA{
+    background-color: rgb(200, 208, 212);
+}
+
+.containerday-PA h4{ /* Estilos para los días de la semana */
+    color: #411d2b;
+    margin-top: 40px;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.containerday-PA h6{ /* Estilos para los nombres de las comidas */
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.containerday-PA img{ /* Estilos para las imágenes */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.containerday-PA ul li{ /* Estilos para descripciones de las comidas */
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.day-PA { /* Estilos para los días de la semana y sus contenidos */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.day-PA li {
+    flex: 0 1 calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #9f77cc;
+}
+
+/*================ PLAN ENTRENAMIENTO =======================*/
+section.planTraining{
+    background-color: rgb(216, 232, 250);
+    text-align: center;
+    padding: 2rem;
+}
+
+.containerPT{
+    background-color: rgb(214, 214, 214);
+}
+
+.containerPT h4{ /* Estilos para los días de la semana */
+    color: #411d2b;
+    margin-top: 40px;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+
+.exercise { /* Estilos para los días de la semana y sus contenidos */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+.exercise-item{
+    flex: 0 1 calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #5755d1;    
+}
+
+.exercise-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.exercise-item P {
+    flex: 0 1 calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #6e2434;
+}
+
+ /*================COMUNIDAD =======================*/
+/* Estilos generales */
+
+section.comunity {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* Estilos para secciones */
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+/* Estilos para títulos */
+.comu_container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilos para párrafos */
+.comu_container p {
+    font-size: 16px;
+}
+
+/* Estilos para botones */
+.comu-button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.comu-button:hover {
+    background-color: #dfdfdf;
+}
+
+/* Estilos para enlaces */
+.comu_container a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.comu_container a:hover {
+    color: #555;
+}
+
+/* Estilos para secciones */
+.comu_container {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para secciones */
+#introduccion {
+    background-color: #f0f0f0;
+}
+
+#entrenamientos {
+    background-color: #f8f8f8;
+}
+
+#nutricion {
+    background-color: #f0f0f0;
+}
+
+#miembros {
+    background-color: #f8f8f8;
+}
+
+#contacto {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para la sección de publicaciones */
+#publicaciones {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para el título de la sección */
+#publicaciones h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilos para el formulario de publicación */
+#publicacion-form {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#publicacion-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#publicacion-form button {
+    background-color: #d252b2; /* Color de fondo del botón de publicación */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#publicacion-form button:hover {
+    background-color: #555;
+}
+
+/* Estilos para las publicaciones */
+.publicacion {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Estilos para los formularios de respuestas */
+.respuesta-form {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.respuesta-form .respuesta-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.respuesta-form .button {
+    background-color: #D052D2; /* Color de fondo del botón de respuesta */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.respuesta-form .button:hover {
+    background-color: #555;
+}
+
+/* Estilos para las respuestas */
+.respuesta {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/*================ Registro BD =======================*/
+section.regisBD{
+    background-color: rgb(163, 182, 163);
+    text-align:center;
+    padding: 2rem;
+}
+
+/*================ APP =======================*/
+
+/*SECCIÓN GUIA*/
+.guia{
+    padding:  3rem 0;
+}
+.subGuia{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #313857;
+}
+.containerG{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+.boxG{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
+}
+.boxG img{
+    width: 200px;
+}
+h3{
+    color: #4c4c4c;
+    margin: 10px 0;
+}
+.boxG p{
+    text-align: center;
+}
+
+/*SECCIÓN FUNCIONES*/
+.funciones{
+    padding:  3rem 0;
+}
+.subFunciones{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #313857;
+}
+.containerF{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+.boxF{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
+}
+.boxF img{
+    width: 200px;
+}
+.boxF h3{
+    color: #4c4c4c;
+    margin: 10px 0;
+}
+.boxF p{
+    text-align: center;
+}
+
+
+/*================ DATOS CORPORALES =======================*/
+/* Estilos generales */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el título */
+h9 {
+    font-size: 36px;
+    margin: 100px 0 20px; /* Añade un margen superior mayor para desplazar el título hacia abajo */
+    text-align: center;
+    color: #D052D2;
+}
+
+/* Estilos para el formulario de datos corporales */
+#bodyDataForm {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#bodyDataForm label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+#bodyDataForm input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #D052D2;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+#bodyDataForm button {
+    background-color: #D052D2;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#bodyDataForm button:hover {
+    background-color: #9C2B9D;
+}
+
+/* Estilos para los resultados de la dieta personalizada */
+#dietResults {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#dietResults h2 {
+    font-size: 28px;
+    color: #D052D2;
+}
+
+#dietResults p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#dietResults a {
+    text-decoration: none;
+}
+
+#dietResults button {
+    background-color: #D052D2;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#dietResults button:hover {
+    background-color: #9C2B9D;
+}
+
+.footer {
+    background-color: rgba(136, 61, 138, 255);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer .icon-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer .icon-container img {
+    margin-right: 5px;
+}
+/*======== Barra de navegación ===============*/
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: absolute;
+    top: 0;
+    right: 53.6px; /* 67% del tamaño original */
+    padding: 6.7px; /* 67% del tamaño original */
+    background-color: #FFFFFF;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo para el elemento "INICIO" en el menú de navegación */
+nav li:first-child a {
+    color: #BA47EB;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 9.38px 10.72px; /* 67% del tamaño original */
+    text-decoration: none;
+}
+/* Estilos para el contenido principal */
+main {
+    margin-top: 46.9px; /* 67% del tamaño original */
+}
+
+/*====== PLAN PREMIUN PAGAR =======*/
+/* Estilos para el título (cambiado a h12) */
+h6 {
+    font-size: 36px;
+    margin: 80px 0 20px; /* Agregado margen superior para evitar que se oculte detrás del header */
+    text-align: center;
+    color: #D052D2;
+}
+
+/* Estilos para la sección Plan Premium */
+.plan_premiun2 {
+    background-color: #FFF;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.container_pPremiun2 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.plan_premiun2 p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilos para el botón */
+.plan_premiun2 a {
+    display: inline-block;
+    background-color: #D052D2; /* Color personalizado */
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.plan_premiun2 a:hover {
+    background-color: #9C2B9D; /* Color personalizado al pasar el cursor */
+}
+
+
+/* Estilos para la imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+/*================ REGISTRAR MANUAL =======================*/
+
+/* Estilos generales */
+body {
+    background-color: #FFF; /* Cambiamos el fondo principal a blanco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el título h1 */
+h1 {
+    font-size: 36px;
+    color: #D052D2;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Estilos para el formulario */
+#foodForm {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+#foodForm label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+#foodForm input[type="text"],
+#foodForm input[type="number"],
+#foodForm select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #D052D2;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+#foodForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cpath d='M6 0l-4.8 6h9.6z' fill='%23D052D2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 12px;
+    border: none;
+}
+
+#foodForm button {
+    background-color: #D052D2;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#foodForm button:hover {
+    background-color: #9C2B9D;
+}
+
+/* Estilos para la lista de alimentos registrados */
+#foodList {
+    list-style: none;
+    padding: 0;
+}
+
+#foodList li {
+    margin-bottom: 20px;
+    background-color: #FFF;
+    padding: 15px;
+    border: 2px solid #D052D2;
+    border-radius: 20px;
+    color: #333;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#foodList li:before {
+    content: "🍽️";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: #D052D2;
+}
+
+#foodList li:hover {
+    background-color: #D052D2;
+    color: #FFF;
+    transform: scale(1.05);
+}
+
+/*=============== METODOS DE PAGO=======================*/
+
+body.payment-page {
+    margin: 0;
+    padding: 0;
+}
+
+body.payment-page .containerBank {
+    width: 100%;
+    text-align: center;
+}
+
+body.payment-page .checkout-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.payment-page .checkout-form h5 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body.payment-page .checkout-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+body.payment-page .checkout-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.payment-page .checkout-form button.apply-button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+body.payment-page .checkout-form button.apply-button:hover {
+    background: #555;
+}
+
+body.payment-page .checkout-form button.payment-button {
+    display: block;
+    margin: 0 auto;
+}
+
+body.payment-page .checkout-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.payment-page .checkout {
+    width: 800px; /* Ajusta este valor según el tamaño que quieras que tenga el formulario */
+    margin: 2rem auto;
+    padding: 70px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*================ PAGO CON PAYPAL =======================*/
+
+.containerBankPaypal {
+    width: 100%;
+    text-align: center; 
+}
+
+.containerBankPaypal .formulario-pago-paypal {
+    max-width: 400px;
+    margin: 2rem auto; /* Cambia el valor de la izquierda y derecha a "auto" */
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerBankPaypal .formulario-pago-paypal label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.containerBankPaypal .formulario-pago-paypal input[type="text"],
+.containerBankPaypal .formulario-pago-paypal select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.containerBankPaypal .formulario-pago-paypal button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.containerBankPaypal .formulario-pago-paypal button:hover {
+    background: #555;
+}
+
+/*RESTABLECER CONTRASEÑA */
+/* Estilos generales */
+body.form-passwordr {
+    background-color: #ffffff; /* Color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+.form-passwordr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Estilos del formulario */
+.form-title {
+    font-size: 24px;
+    color: #FFFFFF; /* Color de texto */
+    margin-bottom: 20px;
+}
+
+.password-reset-form {
+    background-color: #FFFFFF; /* Color de fondo del formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+    font-size: 16px;
+    color: #000000; /* Color de texto */
+    display: block;
+    margin-top: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #D052D2; /* Color del borde del input */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-button {
+    background-color: #D052D2; /* Color de fondo del botón */
+    color: #FFFFFF; /* Color de texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+.form-button:hover {
+    background-color: #BA47EB; /* Color de fondo del botón al pasar el cursor */
+}
+
+.login-link {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 80px; /* Agregar margen inferior al formulario */
+
+}
+
+.login-link a {
+    color: #D052D2; /* Color del enlace */
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+footer {
+    width: 100%; /* Hacer que el footer ocupe todo el ancho */
+}
+
+
+
+
+
+
+
+
+
