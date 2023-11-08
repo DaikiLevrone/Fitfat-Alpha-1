@@ -109,13 +109,7 @@ nav li a {
     text-align: center;
 }
 
-/* Cuando la pantalla tiene 800px o menos, cambia los estilos */
-@media (max-width: 800px) {
-    .sobre-la-nutricion {
-        display: block; /* Cambia la disposición de flex a block */
-        /* Añade o modifica los estilos que necesites para esta dimensión de pantalla */
-    }
-}
+
 
 
 
@@ -194,7 +188,6 @@ nav li a {
 
 @media (max-width: 800px) {
     .sobre-la-nutricion {
-        width: 320px;
         margin-left: 0px;
         margin-top: 100px;
     }
@@ -202,7 +195,7 @@ nav li a {
         .img-txt {
             display: flex;
             flex-direction: column; /* Cambia la dirección de flexión a columna */
-                    margin-left: 100px;
+            margin-left: 100px;
         }
     
         .segundo-parrafo {
